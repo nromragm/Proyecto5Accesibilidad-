@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+}
+
+/* Header */
+header {
+    background-color: #3B82F6;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Logo */
+nav img {
+    height: 30px; 
+}
+
+/* Enlaces de navegación */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600; 
+}
+
+/* Sección principal */
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    max-width: 1500px; 
+    background-color: #f4faff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto con efecto arcoíris */
+.rainbow-text {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 32px;
+}
+
+
+.content a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: auto;
+}
+
+.learn-more {
+    
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background-color: darkred;
+}
+
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.intro-message {
+    text-align: center;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    max-width: 900px; 
+}
+
+.intro-message h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.intro-message p {
+    font-size: 16px;
+    color: #333; 
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #3B82F6; 
+    color: white; 
+    text-align: center; 
+    padding: 15px 10px;
+    font-size: 14px;
+    margin-top: 20px; 
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .flavor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+    .image-container img {
+        max-width: 100%; 
+        margin-top: 20px;
+    }
+
+    .intro-message h2 {
+        font-size: 28px;
+    }
+
+    .intro-message p {
+        font-size: 18px;
+    }
+}
