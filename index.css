@@ -155,31 +155,32 @@ footer a:hover {
 
 
 
+/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     body {
-        padding: 0 10px; 
+        padding: 0 10px;
     }
 
     nav {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
         padding: 10px 0;
     }
 
-    .flavor-section {
+    .cards {
         flex-direction: column;
-        text-align: center;
+        padding: 10px;
     }
 
     .content {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .image-container img {
-        max-width: 100%; 
+        max-width: 100%;
         margin-top: 20px;
     }
 
@@ -188,6 +189,11 @@ footer a:hover {
     }
 
     .intro-message p {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        width: 100%;
         font-size: 18px;
     }
 }
